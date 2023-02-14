@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'store'
+    'store',
+    'basket',
 ]
 
 MIDDLEWARE = [
@@ -65,6 +66,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'store.context_processors.categories',  # Make category gloabl avaiable
+                'basket.context_processors.basket',
             ],
         },
     },
